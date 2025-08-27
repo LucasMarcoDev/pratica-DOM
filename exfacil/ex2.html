@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio facil DOM2</title>
+</head>
+<body>
+    <p id="pa">texto 1</p>
+    <button id="bt" onclick="mensagem()">Envia</button>
+    <script>
+        function mensagem(){
+            let btn = document.querySelector('#bt')
+            let p = document.getElementById('pa')
+            p.textContent= 'voce clicou no botao'
+        }
+    </script>
+</body>
+</html>
+
+<!--2. Mostrar mensagem ao clicar-->

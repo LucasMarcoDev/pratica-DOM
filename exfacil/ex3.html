@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio DOM3</title>
+</head>
+<body>
+    <p id="ocult">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolore, quos nihil libero ex non facere aliquam nobis optio doloribus quam iure nostrum provident! Commodi, aliquam id reiciendis deleniti exercitationem magni?</p>
+    <button id="but" onclick="oculta()">Envio</button>
+    <script>
+        function oculta(){
+        let pp = document.getElementById('ocult');
+        let bt = document.querySelector('but');
+            pp.textContent= ''
+        }
+    </script>
+</body>
+</html>
+<!--ocultar elemento-->

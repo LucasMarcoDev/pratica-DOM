@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EX DOM Facil</title>
+</head>
+<body>
+    <p id="txt">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Neque natus eaque numquam assumenda id, dignissimos officiis fugit, at voluptate magnam nisi necessitatibus eos atque optio ad molestiae. Sequi, suscipit ut.</p>
+    <button onclick="muda()" class="btn">Manda!</button>
+<script>
+    function muda(){
+        let bot = document.querySelector('.btn')
+        let tet = document.getElementById('txt')
+        tet.style.backgroundColor= 'yellowgreen'
+    }
+</script>
+</body>
+</html>
+<!--1. Trocar cor do texto com botão-->
