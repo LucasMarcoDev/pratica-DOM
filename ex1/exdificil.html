@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio Dificil</title>
+</head>
+<body>
+    
+    <input type="text" name="nome" id="nome">
+    <button type="submit" id="btn" onclick=" return verifique()">Enviar!</button>
+    <p id="txt"></p>
+
+    <script>
+        function verifique(){
+            let inp = document.querySelector('#nome');
+            let but = document.getElementById('btn');
+            let para = document.querySelector('#txt');
+
+            if(inp.value === ''){
+                alert('O campo esta vazio, por favor digite algo.')
+            }else{
+                para.innerText = 'O campo foi corretamente preenchido!!'
+            };
+            
+        }
+    </script>
+</body>
+</html>
+
+<!--Nível Difícil — Mostrar mensagem com validação
+Objetivo: Quando clicar no botão, verificar se o campo está vazio. Se estiver vazio, mostrar alerta. Se estiver preenchido, mostrar mensagem na página.-->

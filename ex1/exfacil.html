@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio Facil</title>
+</head>
+<body>
+    <h1 class="titulo">Eu estou aqui</h1>
+    <button type="submit" onclick="cliquei()" id="btn">Enviar!</button>
+
+    <script>
+        function cliquei(){
+            let botao = document.getElementById('btn');
+            let titu = document.querySelector('.titulo');
+            titu.textContent = 'o meu texto foi mudado!'
+        }
+    </script>
+</body>
+</html>
+
+<!--Trocar texto com botão
+Objetivo: Quando clicar no botão, o texto do <h1> muda.-->
