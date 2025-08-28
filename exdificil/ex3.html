@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio Dificil DOM</title>
+</head>
+<body id="corpo">
+    
+        <label for="login">Login:</label>
+        <input type="text" name="login" id="login">
+        <br><br>
+        <label for="senha">Senha:</label>
+        <input type="text" name="senha" id="senha">
+        <button onclick="login()">Enviar</button>
+
+
+    <script>
+        function login(){
+            let log = document.getElementById('login')
+            let passW= document.querySelector('#senha')
+            if(log.value === 'admin' && passW.value === '1234'){
+                
+                  let p = document.createElement('p')
+                document.getElementById('corpo').appendChild(p);
+                p.textContent = 'Login efetuado com sucesso!'
+                p.style.backgroundColor= 'lightblue'
+            } else{
+              alert('Usuario e senha incorretos,  por favor tente novamente!')
+              let bo = document.getElementById('corpo')
+              bo.style.backgroundColor = 'red'
+
+            }
+            return false
+        }
+    </script>
+</body>
+</html>
+<!--9. Simular login simples-->

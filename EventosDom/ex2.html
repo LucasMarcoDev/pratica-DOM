@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eventos DOM</title>
+</head>
+<body>
+    <p id="texto">Passe o mouse e depois tire!</p>
+
+<script>
+  let texto = document.getElementById("texto");
+
+  texto.addEventListener("mouseover", function() {
+    texto.style.color = "green";
+  });
+
+  texto.addEventListener("mouseout", function() {
+    texto.style.color = "black";
+    texto.innerText = "Texto voltou ao normal!";
+  });
+</script>
+
+</body>
+</html>

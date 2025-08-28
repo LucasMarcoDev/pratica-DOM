@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p  id="teste" onmouseover="passa()">aqui a gente testa o mouseover</p>
+
+    <script>
+        function passa(){
+            let p = document.getElementById('teste')
+            p.textContent = 'O teste de evento mouseOver deu certo parabens!';
+            p.style.color= ' green'
+        }
+    </script>
+</body>
+</html>

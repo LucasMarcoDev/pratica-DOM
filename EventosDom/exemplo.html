@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button id="meuBotao">Clique aqui</button>
+<p id="mensagem"></p>
+
+<script>
+  // 1. Seleciona o botão pelo ID
+  let botao = document.getElementById("meuBotao");
+
+  // 2. Adiciona um ouvinte de evento de clique
+  botao.addEventListener("click", function() {
+    // 3. Quando clicado, muda o texto do parágrafo
+    document.getElementById("mensagem").innerText = "Você clicou no botão!";
+  });
+</script>
+
+</body>
+</html>

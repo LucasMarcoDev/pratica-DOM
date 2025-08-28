@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio Medio DOM</title>
+</head>
+<body>
+    <p id="te">Cliques: 0</p>
+    <button id="bt" onclick="clica()">Clique</button>
+    <script>
+        let tot = 0
+        function clica(){
+            tot++
+            document.getElementById('te').innerText = 'Cliques: ' + tot;
+
+        }
+    </script>
+</body>
+</html>
+<!--Contador de cliques-->

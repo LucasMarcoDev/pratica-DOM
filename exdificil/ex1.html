@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio dificil DOM</title>
+</head>
+<body>
+    <input id="sou" type="text" placeholder="Digite algo aqui">
+    <button onclick="muda()">clique</button>
+
+    <script>
+        function muda(){
+            let inp = document.getElementById('sou')
+            if(inp.value === ''){
+                inp.style.border = " 2px solid red"
+            }else{
+                inp.style.border = ' 5px dashed green'
+            };
+
+        }
+    </script>
+</body>
+</html>
+<!--Validação com borda vermelha-->
